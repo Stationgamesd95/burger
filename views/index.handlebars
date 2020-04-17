@@ -1,0 +1,21 @@
+<h1>Eat-Da_Burger!</h1>
+
+
+<!-- Pass in data from server.js -->
+<ul>
+  {{#each burger}}
+  	<li>
+  		<p><span class="label">ID:</span> {{this.id}}</p>
+
+      <button data-id="{{this.id}}" class="devburger">Devour it!</button>
+
+  	</li>
+  {{/each}}
+</ul>
+
+<form class="create-form">
+
+
+  <button type="submit">Submit</button>
+  <p>Enter a bugrer you want to eat! Click the "Submit" button!</p>
+</form>
